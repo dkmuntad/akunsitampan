@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Akun Program Studi di SITAMPAN</title>
+
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Informasi Akun Program Studi di SITAMPAN</h2>
+                <div class="form-group">
+                    <label for="prodi">Select Prodi:</label>
+                    <select id="prodi" class="form-control" onchange="showLoginInfo()">
+                        <option value="">-- Select Prodi --</option>
+                        <option value="86206">S1 - Pendidikan Guru Sekolah Dasar</option>
+                        <option value="87201">S1 - Pendidikan Sejarah</option>
+                        <option value="87205">S1 - Pendidikan Pancasila Dan Kewarganegaraan</option>
+                        <option value="84204">S1 - Pendidikan Kimia</option>
+                        <option value="86201">S1 - Bimbingan Dan Konseling</option>
+                        <option value="88203">S1 - Pendidikan Bahasa Inggris</option>
+                        <option value="88201">S1 - Pendidikan Bahasa Dan Sastra Indonesia</option>
+                        <option value="87202">S1 - Pendidikan Geografi</option>
+                        <option value="84205">S1 - Pendidikan Biologi</option>
+                        <option value="84202">S1 - Pendidikan Matematika</option>
+                        <option value="85201">S1 - Pendidikan Jasmani, Kesehatan Dan Rekreasi</option>
+                        <option value="84203">S1 - Pendidikan Fisika</option>
+                        <option value="86207">S1 - Pendidikan Guru Pendidikan Anak Usia Dini</option>
+                        <option value="84208">S1 - Pendidikan Ilmu Pengetahuan Alam</option>
+                        <option value="65201">S1 - Ilmu Pemerintahan</option>
+                        <option value="82201">S1 - Antropologi</option>
+                        <option value="63201">S1 - Ilmu Administrasi Publik</option>
+                        <option value="70201">S1 - Ilmu Komunikasi</option>
+                        <option value="69201">S1 - Sosiologi</option>
+                        <option value="61404">D3 - Manajemen Pemasaran</option>
+                        <option value="62401">D3 - Akuntansi</option>
+                        <option value="62201">S1 - Akuntansi</option>
+                        <option value="60201">S1 - Ekonomi dan Pembangunan</option>
+                        <option value="61201">S1 - Manajemen</option>
+                        <option value="62303">D4 - Akuntansi Sektor Publik</option>
+                        <option value="61271">S1 - Manajemen (Kampus Kab.Morowali)</option>
+                        <option value="61272">S1 - Manajemen Kampus Kab. Tojo Una-una</option>
+                        <option value="74201">S1 - Ilmu Hukum</option>
+                        <option value="54213">S1 - Agroteknologi Kampus Kab. Tojo Una-una</option>
+                        <option value="54212">S1 - Agroteknologi (Kampus Kab. Morowali)</option>
+                        <option value="54211">S1 - Agroteknologi</option>
+                        <option value="54201">S1 - Agribisnis</option>
+                        <option value="54296">S1 - Proteksi Tanaman</option>
+                        <option value="36301">D4 - Teknologi Rekayasa Manufaktur</option>
+                        <option value="55202">S1 - Teknik Informatika</option>
+                        <option value="35201">S1 - Perencanaan Wilayah dan Kota</option>
+                        <option value="22401">D3 - Teknik Sipil</option>
+                        <option value="22211">S1 - Teknik Sipil (Kampus Kab. Morowali)</option>
+                        <option value="57201">S1 - Sistem Informasi</option>
+                        <option value="22212">S1 - Teknik Sipil Kampus Kab Tojo Una-una</option>
+                        <option value="23201">S1 - Arsitektur</option>
+                        <option value="20201">S1 - Teknik Elektro</option>
+                        <option value="21201">S1 - Teknik Mesin</option>
+                        <option value="22201">S1 - Teknik Sipil</option>
+                        <option value="20403">D4 - Teknologi Rekayasa Instalasi Listrik</option>
+                        <option value="352045">S1 - Teknik Lingkungan</option>
+                        <option value="34201">S1 - Teknik Geologi</option>
+                        <option value="22301">D4 - Teknologi Rekayasa Konstruksi Jalan dan Jembatan</option>
+                        <option value="45201">S1 - Fisika</option>
+                        <option value="44201">S1 - Matematika</option>
+                        <option value="49201">S1 - Statistika</option>
+                        <option value="46201">S1 - Biologi</option>
+                        <option value="47201">S1 - Kimia</option>
+                        <option value="33201">S1 - Teknik Geofisika</option>
+                        <option value="48201">S1 - Farmasi</option>
+                        <option value="54251">S1 - Kehutanan</option>
+                        <option value="54243">S1 - Akuakultur</option>
+                        <option value="54231">S1 - Peternakan</option>
+                        <option value="54270">S1 - Sosial Ekonomi Peternakan</option>
+                        <option value="54263">S1 - Sumber Daya Akuatik</option>
+                        <option value="13201">S1 - Kesehatan Masyarakat</option>
+                        <option value="13211">S1 - Gizi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" class="form-control" readonly>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" class="form-control" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const prodiData = {
+            "86206": { user: "86206", password: "abcde" },
+            "87201": { user: "87201", password: "abcde" },
+            "87205": { user: "87205", password: "abcde" },
+            "84204": { user: "84204", password: "abcde" },
+            "86201": { user: "86201", password: "abcde" },
+            "88203": { user: "88203", password: "abcde" },
+            "88201": { user: "88201", password: "abcde" },
+            "87202": { user: "87202", password: "abcde" },
+            "84205": { user: "84205", password: "abcde" },
+            "84202": { user: "84202", password: "abcde" },
+            "85201": { user: "85201", password: "abcde" },
+            "84203": { user: "84203", password: "abcde" },
+            "86207": { user: "86207", password: "abcde" },
+            "84208": { user: "84208", password: "abcde" },
+            "65201": { user: "65201", password: "abcde" },
+            "82201": { user: "82201", password: "abcde" },
+            "63201": { user: "63201", password: "abcde" },
+            "70201": { user: "70201", password: "abcde" },
+            "69201": { user: "69201", password: "abcde" },
+            "61404": { user: "61404", password: "abcde" },
+            "62401": { user: "62401", password: "abcde" },
+            "62201": { user: "62201", password: "abcde" },
+            "60201": { user: "60201", password: "abcde" },
+            "61201": { user: "61201", password: "abcde" },
+            "62303": { user: "62303", password: "abcde" },
+            "61271": {user: "61271", password: "abcde" },
+            "61272": { user: "61272", password: "abcde" },
+            "74201": { user: "74201", password: "abcde" },
+            "54213": { user: "54213", password: "abcde" },
+            "54212": { user: "54212", password: "abcde" },
+            "54211": { user: "54211", password: "abcde" },
+            "54201": { user: "54201", password: "abcde" },
+            "54296": { user: "54296", password: "abcde" },
+            "36301": { user: "36301", password: "abcde" },
+            "55202": { user: "55202", password: "abcde" },
+            "35201": { user: "35201", password: "abcde" },
+            "22401": { user: "22401", password: "abcde" },
+            "22211": { user: "22211", password: "abcde" },
+            "57201": { user: "57201", password: "abcde" },
+            "22212": { user: "22212", password: "abcde" },
+            "23201": { user: "23201", password: "abcde" },
+            "20201": { user: "20201", password: "abcde" },
+            "21201": { user: "21201", password: "abcde" },
+            "22201": { user: "22201", password: "abcde" },
+            "20403": { user: "20403", password: "abcde" },
+            "352045": { user: "352045", password: "abcde" },
+            "34201": { user: "34201", password: "abcde" },
+            "22301": { user: "22301", password: "abcde" },
+            "45201": { user: "45201", password: "abcde" },
+            "44201": { user: "44201", password: "abcde" },
+            "49201": { user: "49201", password: "abcde" },
+            "46201": { user: "46201", password: "abcde" },
+            "47201": { user: "47201", password: "abcde" },
+            "33201": { user: "33201", password: "abcde" },
+            "48201": { user: "48201", password: "abcde" },
+            "54251": { user: "54251", password: "abcde" },
+            "54243": { user: "54243", password: "abcde" },
+            "54231": { user: "54231", password: "abcde" },
+            "54270": { user: "54270", password: "abcde" },
+            "54263": { user: "54263", password: "abcde" },
+            "13201": { user: "13201", password: "abcde" },
+            "13211": { user: "13211", password: "abcde" }
+        };
+
+        function showLoginInfo() {
+            const prodiSelect = document.getElementById('prodi');
+            const selectedProdi = prodiSelect.value;
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+
+            if (prodiData[selectedProdi]) {
+                usernameInput.value = prodiData[selectedProdi].user;
+                passwordInput.value = prodiData[selectedProdi].password;
+            } else {
+                usernameInput.value = '';
+                passwordInput.value = '';
+            }
+        }
+    </script>
+</body>
+</html>
+
